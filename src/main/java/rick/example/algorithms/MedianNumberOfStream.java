@@ -15,7 +15,8 @@ import java.util.PriorityQueue;
  * The priority queues maintain in the head(top) the bigger or smaller value of the queue
  * and the time complexity is O(log(N)).
  * Compared to the insertion sort they don't need to take the full list ordered.
- *
+ * The median is the average numer of the 2 lists in case of even numbers in the set
+ * and the biggest one in the left list in the case of an odd number of values.
  */
 public class MedianNumberOfStream {
 
