@@ -1,9 +1,8 @@
-package rick.example.algorithms.tree;
+package rick.example.algorithms.binarysearch;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import rick.example.algorithms.binarysearch.BinarySearch;
 
 class BinarySearchTest {
 

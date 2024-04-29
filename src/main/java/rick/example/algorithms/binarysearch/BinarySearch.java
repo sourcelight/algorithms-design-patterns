@@ -4,7 +4,7 @@
  */
 
 
-package rick.example.algorithms.tree;
+package rick.example.algorithms.binarysearch;
 
 
 /**
