@@ -31,6 +31,7 @@ class AgnosticOrderBinarySearchTest {
 
         //Collections.reverse works for collections, not for Array
         //The function below is from apache common lang
+        //I invert the order
         ArrayUtils.reverse(ascendingOrder);
         int key = 11;
         int expectedIndex = 3;
