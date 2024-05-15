@@ -34,6 +34,8 @@ public class BinarySearchCeiling {
                 return middle;
             }
         }
+        // since the loop is running until 'start <= end', so at the end of the while loop, 'start == end+1'
+        // we are not able to find the element in the given array, so the next big number will be arr[start]
         return start;
     }
 }
