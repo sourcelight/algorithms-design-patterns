@@ -1,6 +1,8 @@
 /**
  * @author: Riccardo_Bruno
  * @project: algorithms-design-patterns
+ *
+ * @see <a href="https://leetcode.com/problems/stock-price-fluctuation/solutions/1905632/java-full-explanation-interview-tips-2-solutions/">leet code</a>
  */
 
 
@@ -29,7 +31,7 @@ class StockPrice {
             }
             //if happens another previous time we need to see what to do with the
             //price occurrence, if there were only one occurrence we need to remove it
-            //(it's been overrided by the new value,anyway we add it again in the end)
+            //(it's been overridden by the new value,anyway we add it again in the end)
             //If the occurrence is more than one we decrease the occurrence of that price
             if(timestampPrices.containsKey(timestamp)) {
                 int oldPrice = timestampPrices.get(timestamp);
