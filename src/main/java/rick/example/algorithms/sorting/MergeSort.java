@@ -4,10 +4,11 @@
  */
 
 
-package rick.example.algorithms;
+package rick.example.algorithms.sorting;
 
 
 import java.util.stream.Stream;
+
 
 /**
  * @see <a href="https://www.baeldung.com/java-merge-sort#:~:text=Merge%20sort%20is%20a%20%E2%80%9Cdivide,final%20solution%20to%20the%20problem.">reference</a>
@@ -16,9 +17,10 @@ import java.util.stream.Stream;
  * base: in the case I got only one elment I return and do nothing, already ordered
  * mergeSort: I create 2 subarrays:left and right(by the middle pivot calculation) from the "full" array, I fill them and invoke recursively the mergeSort alogirthm on the 2 previously subarrays
  * I invoke the merge method: it does the heavy lift: ordering and merging the 2 sub arrays into the "full array"
+ *
  */
-class Sort {
 
+public class MergeSort {
 
     public void merge(int[] arr, int[] l, int[] r, int left, int right) {
 
@@ -48,6 +50,9 @@ class Sort {
 
     }
 
+    /**
+     *This algorithm has the worst case complexity of O(nlog(n))
+     */
     public void mergeSort(int[] arr, int n) {
 
         //stop recursion when the array's size is 1
@@ -79,23 +84,5 @@ class Sort {
 
 
     }
-}
-
-/**
- * @see <a href="https://www.baeldung.com/java-merge-sort#:~:text=Merge%20sort%20is%20a%20%E2%80%9Cdivide,final%20solution%20to%20the%20problem.">reference</a>
- */
-public class MergeSort {
-
-
-    public static void main(String[] args) {
-
-        //case of using a Supplier(()->{return i[0]++;}) to generate an infinite sequence
-        int[] i = new int[]{0};
-        Stream.generate(() -> {
-            return i[0]++;
-        }).forEach(System.out::println);
-
-    }
-
 
 }

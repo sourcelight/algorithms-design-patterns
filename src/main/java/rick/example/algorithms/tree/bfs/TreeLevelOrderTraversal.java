@@ -46,7 +46,7 @@ public class TreeLevelOrderTraversal {
                 TreeNode treeNode = queue.poll();
                 levelList.add(treeNode.getVal());
 
-                //now I add in the queue the possible children of the removed(by the poll method) node
+                //now I add in the queue the possible children of the removed node(by the poll method)
                 //note that is only left and right because we deal with a binary tree
                 if (treeNode.left != null) {
                     queue.offer(treeNode.left);
